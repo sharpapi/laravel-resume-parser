@@ -7,7 +7,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sharpapi/laravel-resume-parser.svg?style=flat-square)](https://packagist.org/packages/sharpapi/laravel-resume-parser)
 [![Total Downloads](https://img.shields.io/packagist/dt/sharpapi/laravel-resume-parser.svg?style=flat-square)](https://packagist.org/packages/sharpapi/laravel-resume-parser)
 
-Check the details at SharpAPI's [Resume Rarsing API](https://sharpapi.com/en/catalog/ai/hr-tech/resume-cv-parsing) page.
+Check the details at SharpAPI's [Resume Parsing API](https://sharpapi.com/en/catalog/ai/hr-tech/resume-cv-parsing) page.
 
 ---
 
