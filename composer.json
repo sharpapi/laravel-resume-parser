@@ -1,0 +1,83 @@
+{
+  "name": "sharpapi/laravel-resume-parser",
+  "description": "AI Resume Parser/CV Parser for Laravel powered by SharpAPI.com",
+  "keywords": [
+    "sharpapi",
+    "ai-powered",
+    "ai capabilities",
+    "api",
+    "ai api",
+    "api integration",
+    "artificial intelligence",
+    "natural language processing",
+    "restful api",
+    "php",
+    "laravel",
+    "software development",
+    "content generation",
+    "content analysis",
+    "hr tech",
+    "api integration"
+  ],
+  "homepage": "https://github.com/sharpapi/laravel-resume-parser",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dawid Makowski",
+      "email": "contact@sharpapi.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^7.0",
+    "laravel/framework": "^9.0|^10.0|^11.0",
+    "kongulov/interact-with-enum": "^1.0",
+    "sharpapi/php-core": "^1.0",
+    "spatie/laravel-data": "^3.0|^4.0",
+    "spatie/url": "^2.4"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SharpAPI\\ResumeParser\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SharpAPI\\ResumeParser\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": "",
+    "build": [
+    ],
+    "start": [
+      "Composer\\Config::disableProcessTimeout",
+      "@composer run build"
+    ],
+    "analyse": "vendor/bin/phpstan analyse",
+    "test": "vendor/bin/pest",
+    "test-coverage": "vendor/bin/pest --coverage",
+    "format": "vendor/bin/pint"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true,
+      "phpstan/extension-installer": true
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SharpAPI\\ResumeParser\\ResumeParserProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
