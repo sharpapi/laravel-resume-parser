@@ -20,24 +20,24 @@ class ResumeParserService extends SharpApiClient
      */
     public function __construct()
     {
-        parent::__construct(config('sharpapi-client.api_key'));
+        parent::__construct(config('sharpapi-resume-parser.api_key'));
         $this->setApiBaseUrl(
             config(
-                'sharpapi-client.base_url',
+                'sharpapi-resume-parser.base_url',
                 'https://sharpapi.com/api/v1'
             )
         );
         $this->setApiJobStatusPollingInterval(
             (int) config(
-                'sharpapi-client.api_job_status_polling_interval',
+                'sharpapi-resume-parser.api_job_status_polling_interval',
                 5)
         );
         $this->setApiJobStatusPollingWait(
             (int) config(
-                'sharpapi-client.api_job_status_polling_wait',
+                'sharpapi-resume-parser.api_job_status_polling_wait',
                 180)
         );
-        $this->setUserAgent('SharpAPILaravelAgent/1.2.2');
+        $this->setUserAgent('SharpAPILaravelResumeParser/1.2.3');
 
     }
 
